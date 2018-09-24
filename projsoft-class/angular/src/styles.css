@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
+
+body {
+  font-family: "Space Mono";
+  font-weight:400;
+  font-size: 0.8em;
+  color: #aaa;
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+input {
+  font-family: "Space Mono";
+  font-size:1em;
+  outline:none;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+.container {
+  width: 600px;
+  margin: 100px auto;
+  box-shadow: 0 0 2px hsla(0,0%,0%,0.2); 
+  border-radius:6px;
+}
+
+@keyframes shake {
+  from {left: -2px;}
+  to   {left: 2px;}
+}
+
+@keyframes birth {
+  from {height:0;}
+  to   {height: 50px;}
+}
+
+.row {
+  height: 50px;
+  padding:0 20px;
+  line-height:50px;
+}
+
+header {
+  background: #1D1D1D;
+  color: white;
+  font-weight:bold;
+}
+
+footer {
+  transition: all 0.2s cubic-bezier(.7,.2,.17,1);
+  background: #c0392b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer p{
+  text-align: center !important;
+}
+
+.task {
+  overflow:hidden;
+  transition: all 0.2s 0.2s cubic-bezier(.7,.2,.17,1);
+  position:relative;
+  display:block;
+}
+
+.field {
+  transition: background-size 0.8s 0.2s cubic-bezier(.7,.2,.17,1),
+              background-color 0.2s cubic-bezier(.7,.2,.17,1),
+              height 0.2s 1s cubic-bezier(.7,.2,.17,1);
+  position:relative;
+  background-color:#222222;
+  border-top: 1px solid #1D1D1D;
+  cursor: pointer;
+}
+
+.field:hover {background-color:#1D1D1D;}
+
+.task:first-child .field {
+  border-top:none;
+}
+
+.checker {
+  transition: all 0.3s cubic-bezier(.09,.66,.36,1.8);
+  position: absolute;
+  right:0;
+  top:0;
+  color: #47D185;
+  font-size:1.4em;
+  height:50px;
+  width:50px;
+  border:0;
+  background:none;
+}
+
+.add {
+  height:50px;
+  border:0;
+  background:none;
+  width:100%;
+  color:white;
+}

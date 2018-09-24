@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+body {
+    font-family: "Space Mono";
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #aaa;
+    background: #67DAF9;
+    background: -webkit-linear-gradient(to top, #222222, #222222);
+    background: linear-gradient(to top, #222222, #222222);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input {
+    font-family: "Space Mono";
+    font-size: 1em;
+    outline: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgb(4, 119, 151), 0 0 10px rgb(4, 119, 151), 0 0 15px rgb(4, 119, 151), 0 0 20px rgb(4, 119, 151), 0 0 35px rgb(4, 119, 151), 0 0 40px rgb(4, 119, 151), 0 0 50px #67DAF9;
+}
+
+@keyframes shake {
+    from {
+        left: -2px;
+    }
+    to {
+        left: 2px;
+    }
+}
+
+@keyframes birth {
+    from {
+        height: 0;
+    }
+    to {
+        height: 50px;
+    }
+}
+
+.row {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+header {
+    background: #1D1D1D;
+    color: white;
+    font-weight: bold;
+}

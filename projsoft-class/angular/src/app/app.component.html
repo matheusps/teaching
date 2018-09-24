@@ -1,0 +1,24 @@
+<div class="container animated bounceInUp">
+
+  <header class="row">ALL TODOS (DOUBLE CLICK TO REMOVE)</header>
+
+  <section class="list">
+    <div class="task" *ngFor="let todo of todos">
+      <div class="field row" [ngStyle]="{'color':todo.isDone ? '#47D185' : '#aaa' }" (click)="toggleTodo(todo)" (dblclick)="removeTodo(todo)">
+        {{todo.text}}
+        <button class="checker">
+          <i class="fa fa-check" *ngIf="todo.isDone"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="row">
+    <form #todoForm="ngForm" (ngSubmit)="addTodo()">
+      <input id="text" class="add" type="text" placeholder="+ add new task" [(ngModel)]="todoModel.text" name="text" required>
+    </form>
+    <p>Made With
+      <i class="fa fa-heart"></i> by Matheus P. Silva</p>
+  </footer>
+
+</div>

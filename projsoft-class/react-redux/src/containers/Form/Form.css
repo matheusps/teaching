@@ -1,0 +1,16 @@
+.add {
+    height: 50px;
+    border: 0;
+    background: none;
+    width: 100%;
+    color: #000;
+}
+
+footer {
+    transition: all 0.2s cubic-bezier(.7, .2, .17, 1);
+    background: #67DAF9;
+}
+
+footer p {
+    text-align: center !important;
+}
