@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat');
+
+:root {
+
+    --color-primary-dark: #1c3bbf;
+    --color-primary-light: #3a59ff;
+    --color-secondary-dark: #823f9c;
+    --color-secondary-light: #9b59b6;
+    --color-positive-dark: #11a34e;
+    --color-positive-light: #2ecc71;
+    --color-alert-dark: #c76a18;
+    --color-alert-light: #e67e22;
+    --color-danger-dark: #ca3423;
+    --color-danger-light: #e74c3c;
+
+    --color-text-dark: #1b2733;
+    --color-text-mute: #acacac;
+    --color-text-light: #ffffff;
+    --color-links: #3C3C3C;
+
+    --color-bg-dark: #0F0F0F;
+    --color-bg-card: #f3f3f3;
+    --color-bg-card-darker: #d8d8d8;
+
+    --content-padding: 1%;
+
+    --text-small: 14px;
+    --text-normal: 16px;
+    --text-large: 20px;
+    --text-xlarge: 24px;
+
+    --btn-height: 60px;
+    --btn-width: 200px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    display: flex;
+    height: 100vh;
+}
+
+/*
+** Typo
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    font-size: var(--text-xlarge);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    line-height: 0.23;
+}
+
+.subtitle {
+    color: var(--color-primary-light);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--text-normal);
+    line-height: 26px;
+    color: var(--color-text-dark);
+    font-variant-ligatures: no-common-ligatures;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    text-align: justify;
+    font-weight: normal;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: var(--text-large);
+    font-weight: bold;
+    color: var(--color-links);
+    text-transform: uppercase;
+}
+
+/*
+** Content and BGs
+*/
+.content {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 0.5%;
+}
+
+.bg-dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+}
+
+/*
+** Menu
+*/
+.menu {
+    flex: 0 0 auto;
+    width: 25%;
+    background-color: var(--color-bg-dark);
+    text-align: center;
+}
+
+.menu .logo {
+    width: 70%;
+    height: auto;
+    padding-top: 5%;
+}
+
+.menu nav {
+    padding-top: 50%;
+}
+
+.menu nav a {
+    display: list-item;
+    padding-top: 5%;
+}
+
+.active {
+    color: #FFF;
+}
+
+/*
+** Buttons
+*/
+.btn {
+    height: var(--btn-height);
+    width: var(--btn-width);
+    font-size: var(--text-large);
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-image: linear-gradient(102deg, var(--color-primary-dark), var(--color-primary-light));
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(102deg, var(--color-primary-light), var(--color-primary-dark));
+}
+
+.btn-secondary {
+    background-image: linear-gradient(102deg, var(--color-secondary-dark), var(--color-secondary-light));
+}
+
+.btn-secondary:hover {
+    background-image: linear-gradient(102deg, var(--color-secondary-light), var(--color-secondary-dark));
+}
+
+.btn-positive {
+    background-image: linear-gradient(102deg, var(--color-positive-dark), var(--color-positive-light));
+}
+
+.btn-positive:hover {
+    background-image: linear-gradient(102deg, var(--color-positive-light), var(--color-positive-dark));
+}
+
+.btn-alert {
+    background-image: linear-gradient(102deg, var(--color-alert-dark), var(--color-alert-light));
+}
+
+.btn-alert:hover {
+    background-image: linear-gradient(102deg, var(--color-alert-light), var(--color-alert-dark));
+}
+
+.btn-danger {
+    background-image: linear-gradient(102deg, var(--color-danger-dark), var(--color-danger-light));
+}
+
+.btn-danger:hover {
+    background-image: linear-gradient(102deg, var(--color-danger-light), var(--color-danger-dark));
+}
+
+/*
+** Cart btn
+*/
+.cart-btn {
+    height: 10% !important;
+}
+
+.cart-btn span {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: #ffffff;
+
+}
+
+.cart-btn img {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+/*
+** Cart Item
+*/
+.cart-item {
+    margin: 1%;
+    background-color: #f3f3f3;
+}
+
+
+.cart-item .dino-img {
+    padding: 4px;
+}
+
+.cart-item .aside {
+    background-color: #d8d8d8;
+    cursor: pointer;
+}
+
+.cart-item .aside img {
+    margin: 30% auto auto 40%;
+}
+
+/*
+** Card
+*/
+.card {
+    padding: 1%;
+    margin: 1%;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+.card img {
+    display: list-item;
+}
+
+.card .btn {
+    display: list-item;
+    margin-top: 3%;
+}
